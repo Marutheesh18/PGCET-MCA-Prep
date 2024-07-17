@@ -1,0 +1,73 @@
+:root {
+    --cherryred : #990011;
+    --black : #2c2c54;
+}
+
+* {
+    font-family : Georgia, 'Times New Roman', Times, serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 0.2s linear ;
+}
+
+*::selection {
+    background: var(--cherryred);
+    color : #FCF6F5;
+}
+
+html {
+    font-size: 63%;
+    overflow-x: hidden;
+    scroll-padding-top: 6.5rem ;
+    scroll-behavior: smooth;
+}
+
+.header-2 {
+    background: #f6c5c5;
+    display :flex;
+    align-items: center;
+    justify-content : space-around;
+    padding: 2rem 9%;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.936);
+    position: relative;
+}
+    
+ div img {
+    width: 100px;
+    /* display: flex;
+    align-self: flex-start;
+    align-self: center; */
+}
+
+/*.header-1.website-logo {
+    display: flex;
+    justify-content :flex-start;
+   
+} */
+
+.header-2 .navbar a{
+    padding: 0.5rem 1.5rem;
+    font-size: 2rem;
+    border-radius: 1rem;
+    color: var(--black);
+}
+
+.header-2 .navbar a:hover {
+    background:var(--cherryred);
+    color: #fff;    
+}
+
+.header-2 div a{
+    padding: 0.5rem 1.5rem;
+    font-size: 2rem;
+    border-radius: 0.8rem;
+    background:var(--cherryred);
+    color: rgb(9, 6, 1);
+}
+
+.header-2 div a:hover {
+    color: #fff;    
+}
