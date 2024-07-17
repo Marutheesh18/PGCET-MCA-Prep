@@ -33,24 +33,28 @@ html {
     background: #f6c5c5;
     display :flex;
     align-items: center;
-    justify-content : space-around;
-    padding: 2rem 9%;
+    justify-content :space-around;
+    padding: 1rem 1%;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.936);
     position: relative;
 }
     
+
+
+
  div img {
     width: 100px;
-    /* display: flex;
+    display: flex;
     align-self: flex-start;
-    align-self: center; */
+    /* align-self: center; */
 }
 
-/*.header-1.website-logo {
-    display: flex;
-    justify-content :flex-start;
+.header-1 .website-logo {
+  display :flex;
+  align-items: center;
+  justify-content : flex-start;
    
-} */
+}
 
 .header-1 .navbar a{
     padding: 0.5rem 1.5rem;
@@ -64,7 +68,58 @@ html {
     color: #fff;    
 }
 
-.header-1 div a{
+
+.nav-item {
+  position: relative;
+  margin: 0 10px; /* Adjust spacing between items */
+}
+
+.nav-item a {
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  color: white;
+}
+
+header .header-1 .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ 
+}
+
+header .header-1 .navbar div{
+  padding: 0.5rem 0.5rem;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #e8a8a8;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
+
+.header-1 .website-logo a {
+  font-size: 20px;
+  font-weight: bold;
+}
+.header-1 .login-button a{
     padding: 0.5rem 1.5rem;
     font-size: 2rem;
     border-radius: 0.8rem;
@@ -72,7 +127,7 @@ html {
     color: rgb(9, 6, 1);
 }
 
-.header-1 div a:hover {
+.header-1 .login-button a:hover {
     color: #fff;    
 }
 
@@ -110,22 +165,9 @@ header {
 
 section{
     padding:2rem 9%;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.936);
   }
   
-  .btn{
-    display: inline-block;
-    margin-top: 1rem;
-    background: var(--cherryred);
-    color:#fff;
-    padding:.8rem 3rem;
-    font-size: 1.7rem;
-    text-align: center;
-    cursor: pointer;
-  }
-  
-  .btn:hover{
-    background:green;
-  }
 
 .home{
     display: flex;
@@ -138,7 +180,6 @@ section{
     flex:1 1 40rem;
     padding-top: 3rem;
     display: flex;
-    
     justify-content: end;
   }
   
@@ -155,11 +196,50 @@ section{
   .home .content ul{
     font-size: 3rem;
     color: var(--cherryred);
-    padding-bottom: 50px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    line-height: 50px;
   }
   
-  .home .content h3{
+  .home .content p span{
     font-size: 5rem;
     color:var(--purple);
-    padding-bottom: 50px;
+   
   }
+
+  .home .content p {
+    font-size: 3rem;
+    color:var(--purple);
+    margin-bottom: 30px;
+  }
+
+  .btn{
+    display: inline-block;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    background: var(--cherryred);
+    color:#fff;
+    padding:1rem 3rem;
+    font-size: 2.5rem;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .btn:hover{
+    background:green;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
