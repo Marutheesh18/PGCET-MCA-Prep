@@ -1,6 +1,6 @@
 :root {
     --cherryred : #990011;
-    --black : #2c2c54;
+    --purple : #2c2c54;
 }
 
 * {
@@ -11,6 +11,10 @@
     text-decoration: none;
     text-transform: capitalize;
     transition: all 0.2s linear ;
+}
+
+body {
+    background-color: #fff;
 }
 
 *::selection {
@@ -25,7 +29,7 @@ html {
     scroll-behavior: smooth;
 }
 
-.header-2 {
+.header-1 {
     background: #f6c5c5;
     display :flex;
     align-items: center;
@@ -48,19 +52,19 @@ html {
    
 } */
 
-.header-2 .navbar a{
+.header-1 .navbar a{
     padding: 0.5rem 1.5rem;
     font-size: 2rem;
     border-radius: 1rem;
-    color: var(--black);
+    color: var(--purple);
 }
 
-.header-2 .navbar a:hover {
+.header-1 .navbar a:hover {
     background:var(--cherryred);
     color: #fff;    
 }
 
-.header-2 div a{
+.header-1 div a{
     padding: 0.5rem 1.5rem;
     font-size: 2rem;
     border-radius: 0.8rem;
@@ -68,6 +72,94 @@ html {
     color: rgb(9, 6, 1);
 }
 
-.header-2 div a:hover {
+.header-1 div a:hover {
     color: #fff;    
 }
+
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+} */
+/* 
+header {
+    background-color: #f0f0f0;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+} */
+
+.notification {
+    background-color: #4CAF50;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    color: white;
+    /* font-size: 20px; */
+    cursor: pointer;
+}
+
+
+section{
+    padding:2rem 9%;
+  }
+  
+  .btn{
+    display: inline-block;
+    margin-top: 1rem;
+    background: var(--cherryred);
+    color:#fff;
+    padding:.8rem 3rem;
+    font-size: 1.7rem;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .btn:hover{
+    background:green;
+  }
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .home .image{
+    flex:1 1 40rem;
+    padding-top: 3rem;
+    display: flex;
+    
+    justify-content: end;
+  }
+  
+  .home .image img{
+    width: 200%;
+
+  }
+  
+  .home .content{
+    flex:1 1 40rem;
+    
+  }
+  
+  .home .content ul{
+    font-size: 3rem;
+    color: var(--cherryred);
+    padding-bottom: 50px;
+  }
+  
+  .home .content h3{
+    font-size: 5rem;
+    color:var(--purple);
+    padding-bottom: 50px;
+  }
