@@ -11,6 +11,9 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
+
+
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -87,8 +90,8 @@
     </section>
 
 
-<div class="container swiper">
-<h1>Study Materials</h1>
+  <div class="container swiper">
+   <h1>Study Materials</h1>
     <div class="slider-wrapper">
       <div class="card-list swiper-wrapper">
         <div class="card-item swiper-slide">
@@ -154,7 +157,29 @@
 
 
 
+<!-- Rating and Reviews -->
+<div class="rating-review">
+  
+<div class="wrapper">
+  <h3>Your Ratings & Reviews</h3>
+  <form action="#">
+    <div class="rating">
+      <input type="number" name="rating" hidden>
+      <i class='bx bx-star star' style="--i: 0;"></i>
+      <i class='bx bx-star star' style="--i: 1;"></i>
+      <i class='bx bx-star star' style="--i: 2;"></i>
+      <i class='bx bx-star star' style="--i: 3;"></i>
+      <i class='bx bx-star star' style="--i: 4;"></i>
+    </div>
+    <textarea name="opinion" cols="30" rows="5" placeholder="Your opinion..."></textarea>
+    <div class="btn-group">
+      <button type="submit" class="btn submit">Submit</button>
+      <button class="btn cancel">Cancel</button>
+    </div>
+  </form>
+</div>
 
+</div>
 
 
 
