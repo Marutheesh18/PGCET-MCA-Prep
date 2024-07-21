@@ -60,3 +60,39 @@ allStar.forEach((item, idx)=> {
 		}
 	})
 })
+
+// testimonial
+
+var swiper_testimonial = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  grabCursor: true,
+  loop: true,
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+
+// auto-scroll
+
+const sliderContent = document.querySelector('.testi-content');
+let currentIndex = 0;
+const slides = document.querySelectorAll('.slide');
+const totalSlides = slides.length;
+
+function autoScroll() {
+  currentIndex++;
+  if (currentIndex >= totalSlides) {
+    currentIndex = 0;
+  }
+  sliderContent.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
+
+setInterval(autoScroll, 2000);

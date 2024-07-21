@@ -1,10 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
 
 
 :root {
   --green:rgb(12, 131, 36);
   --black:rgb(5, 5, 6);
   --lightgreen:rgb(175, 222, 175);
+  --yellow: #FFBD13;
+	--blue: #4383FF;
+	--blue-d-1: #3278FF;
+	--light: #F5F5F5;
+	--grey: #AAA;
+	--white: #FFF;
+	--shadow: 8px 8px 30px rgba(0,0,0,.05);
 }
 
 * {
@@ -314,7 +323,7 @@ section{
     opacity: 1;
   }
   
-  .slider-wrapper .swiper-slide-button {
+  /* .slider-wrapper .swiper-slide-button {
     color: var(--black);
     margin-top: -10px;
     transition: 0.2s ease;
@@ -322,7 +331,7 @@ section{
   
   .slider-wrapper .swiper-slide-button:hover {
     color: var(--green);
-  }
+  } */
 
    .subject-name-card{
     display: flex;
@@ -347,7 +356,7 @@ section{
 
 
 
-.container  h1 {
+.container h1 {
   font-size: 40px;
   margin-bottom: 25px;
   margin-top: 25px;
@@ -362,107 +371,123 @@ section{
   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.936);
 }
 
+@media (max-width: 768px) {
+  .slider-wrapper {
+    margin: 0 10px 40px;
+  }
+
+  .slider-wrapper .swiper-slide-button {
+    display: none;
+  }
+}
 
 
-   /* footer section */
 
-   
-.footer .box-container{
+/* testimonial */
+
+.container-testimonial {
   display: flex;
-  gap:1.5rem;
-  flex-wrap: wrap;
-}
-
-.footer .box-container .box{
-  padding:1rem 0;
-  flex:1 1 25rem;
-}
-
-.footer .box-container .box .share a{
-  padding:0;
-  height:4rem;
-  width:4rem;
-  line-height: 4rem;
-  text-align: center;
-}
-
-.footer .box-container .box h3{
-  font-size: 2.5rem;
-  color:var(--black);
-}
-
-.footer .box-container .box p{
-  font-size: 1.3rem;
-  color:#666;
-  padding:.7rem 0;
-}
-
-.footer .box-container .box .links{
-  padding:1rem 0;
-}
-
-.footer .box-container .box .links a{
-  display: block;
-  padding:.5rem 0;
-  font-size: 1.7rem;
-  color:var(--black);
-}
-
-.footer .box-container .box .links a:hover{
-  text-decoration: underline;
-  color:var(--green);
-}
-
-.footer .credit{
-  padding:2.5rem 1rem;
-  border-top: .1rem solid rgba(0,0,0,.1);
-  margin-top: 1rem;
-  text-align: center;
-  font-size: 2rem;
-}
-
-.footer .credit span{
-  color:var(--green);
-}
-
-
-.footer img {
-  width: 100px;
-}
-
-.footer .box-container .box .footer-logo-name {
-  display:flex ;
-  justify-content :start;
   align-items: center;
-  color: var(--black);
+  justify-content: center;
+  background-color: var(--lightgreen);
+  margin: 70px;
+  border-radius: 1rem;
 }
-
-.footer-logo-name a{
-  font-size: 18px;
-  font-weight: bold;
+.testimonial {
+  position: relative;
+  width: 100%;
+  padding: 50px 0;
+  overflow: hidden;
+}
+.testimonial .image {
+  height: 170px;
+  width: 170px;
+  display: flex;
+  justify-self: center;
+  align-self:center ;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.testimonial .slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 30px;
+  height: 100%;
+  width: 100%;
+}
+.slide p {
+  text-align: center;
+  line-height: 25px;
+  padding: 0 160px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+}
+.slide .quote-icon {
+  font-size: 30px;
   color: var(--green);
 }
+.slide .details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.details .name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+.details .job {
+  font-size: 12px;
+  font-weight: 400;
+  color: #333;
+}
 
-
-
+.rating-testimonial{
+  color: rgb(253, 180, 42);
+  /* margin: 1rem 0; */
+  font-size: 2rem;
+}
+/* swiper button css */
+.nav-btn {
+  height: 40px;
+  width: 40px;
+  margin-top: -40px;
+  border-radius: 50%;
+  transform: translateY(30px);
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: 0.2s;
+}
+.nav-btn:hover {
+  background-color: var(--green);
+}
+.nav-btn::after,
+.nav-btn::before {
+  font-size: 20px;
+  color: #fff;
+}
+.container-testimonial .swiper-pagination-bullet{
+  background-color: rgba(0, 0, 0, 0.8);
+ 
+}
+.container-testimonial .swiper-pagination-bullet-active {
+  background-color: var(--green);
+}
+@media screen and (max-width: 768px) {
+  .slide p {
+    padding: 0 20px;
+  }
+  .nav-btn {
+    display: none;
+  }
+}
 
 
 
 /* rating and review */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
-
-
-:root {
-	--yellow: #FFBD13;
-	--blue: #4383FF;
-	--blue-d-1: #3278FF;
-	--light: #F5F5F5;
-	--grey: #AAA;
-	--white: #FFF;
-	--shadow: 8px 8px 30px rgba(0,0,0,.05);
-}
 
 /* body {
 	background: var(--light);
@@ -494,7 +519,7 @@ section{
 	width: 100%; */
   width: 512px;
   height: 350px;
-	border-radius: .75rem;
+	border-radius: 1rem;
 	box-shadow: var(--shadow);
 	text-align: center;
 }
@@ -587,12 +612,91 @@ textarea {
 }
 
   
-@media (max-width: 768px) {
-  .slider-wrapper {
-    margin: 0 10px 40px;
-  }
 
-  .slider-wrapper .swiper-slide-button {
-    display: none;
-  }
+
+
+
+   /* footer section */
+
+   
+.footer .box-container{
+  display: flex;
+  gap:1.5rem;
+  flex-wrap: wrap;
 }
+
+.footer .box-container .box{
+  padding:1rem 0;
+  flex:1 1 25rem;
+}
+
+.footer .box-container .box .share a{
+  padding:0;
+  height:4rem;
+  width:4rem;
+  line-height: 4rem;
+  text-align: center;
+}
+
+.footer .box-container .box h3{
+  font-size: 2.5rem;
+  color:var(--black);
+}
+
+.footer .box-container .box p{
+  font-size: 1.3rem;
+  color:#666;
+  padding:.7rem 0;
+}
+
+.footer .box-container .box .links{
+  padding:1rem 0;
+}
+
+.footer .box-container .box .links a{
+  display: block;
+  padding:.5rem 0;
+  font-size: 1.7rem;
+  color:var(--black);
+}
+
+.footer .box-container .box .links a:hover{
+  text-decoration: underline;
+  color:var(--green);
+}
+
+.footer .credit{
+  padding:2.5rem 1rem;
+  border-top: .1rem solid rgba(0,0,0,.1);
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.footer .credit span{
+  color:var(--green);
+}
+
+
+.footer img {
+  width: 100px;
+}
+
+.footer .box-container .box .footer-logo-name {
+  display:flex ;
+  justify-content :start;
+  align-items: center;
+  color: var(--black);
+}
+
+.footer-logo-name a{
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--green);
+}
+
+
+
+
+
+
