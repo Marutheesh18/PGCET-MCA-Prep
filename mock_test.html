@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mock Test</title>
+    <link rel="stylesheet" href="mock_test.css">
+</head>
+<body>
+
+
+    
+    <div class="container">
+        <div id="timer-container">
+            <p id="timer">Time left: <span id="time">00:00</span></p>
+        </div>
+        <div id="question-container">
+            <div class="question" id="question1">
+                <h2>Question 1</h2>
+                <p>For analyzing and recording existing hypothetical systems we need a computer-assisted method called: </p>
+                <span><input type="radio" name="q1" value="df">  Data Flow</span><br>
+                <span><input type="radio" name="q1" value="dm"> Data Management</span><br>
+                <span><input type="radio" name="q1" value="dt"> Data Retrieving</span><br>
+                <span><input type="radio" name="q1" value="dp"> Data Processing</span><br>
+
+                <button onclick="nextQuestion(2)">Next</button>
+            </div>
+            <div class="question" id="question2">
+                <h2>Question 2</h2>
+                <p>Which mainframe computer was the first?</p>
+                <span><input type="radio" name="q2" value="3"> UNIVAC</span><br>
+                <span><input type="radio" name="q2" value="4"> ASCC</span><br>
+                <span><input type="radio" name="q2" value="5"> LINUX</span><br>
+                <span><input type="radio" name="q2" value="6"> ENIAC</span><br>
+                <button onclick="prevQuestion(1)">Prev</button>
+                <button onclick="nextQuestion(3)">Next</button>
+               
+            </div>
+            <div class="question" id="question3">
+                <h2>Question 3</h2>
+                <p>The term for the processor that executes mathematical and logical operations is 
+                </p>
+                <span><input type="radio" name="q3" value="90"> Control</span><br>
+                <span><input type="radio" name="q3" value="100"> ALU</span><br>
+                <span> <input type="radio" name="q3" value="110"> Register</span><br>
+                <span> <input type="radio" name="q3" value="120"> Cache Memory</span><br>
+
+                <button onclick="prevQuestion(2)">Prev</button>
+                <button onclick="showResults()">Submit</button>
+            </div>
+        </div>
+        <div id="result-container" style="display: none;">
+            <h2>Results</h2>
+            <p id="result"></p>
+            <button onclick="restartQuiz()">Restart</button>
+            <button id="homeButton">Go to Home Page</button>
+        </div>
+    </div>
+    <script src="mock_test.js"></script>
+</body>
+</html>

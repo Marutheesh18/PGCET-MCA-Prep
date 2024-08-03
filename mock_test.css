@@ -1,0 +1,81 @@
+:root {
+    --green:rgb(12, 131, 36);
+    --lightgreen:rgb(175, 222, 175);
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: var(--lightgreen);
+}
+
+.container {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
+
+
+
+#timer-container {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+
+
+.question, #result-container {
+    display: none;
+    padding: 20px;
+}
+
+.question.active {
+    display: block;
+}
+
+button {
+    background-color: var(--green);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #021903;
+}
+
+.container .question span {
+    display: flex;
+    align-items: left;
+    
+}
+
+.container .question p {
+    /* display: flex;
+    align-items: left; */
+    font-weight: bold;
+    text-align: left;    
+}
+
+.container .question button {
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+ .question, #result-container button{
+    margin-left: 20px;
+    margin-right: 20px;
+}
