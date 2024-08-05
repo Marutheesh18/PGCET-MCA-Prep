@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+  --green:rgb(12, 131, 36);
+  --black:rgb(5, 5, 6);
+  --lightgreen:rgb(175, 222, 175);
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -9,7 +16,7 @@
 body{
   min-height: 100vh;
   width: 100%;
-  background: #009579;
+  background: var(--lightgreen);
 }
 .container{
   position: absolute;
@@ -58,7 +65,7 @@ body{
  }
 .form a{
   font-size: 16px;
-  color: #009579;
+  color: var(--green);
   text-decoration: none;
 }
 .form a:hover{
@@ -66,7 +73,7 @@ body{
 }
 .form input.button{
   color: #fff;
-  background: #009579;
+  background: var(--green);
   font-size: 1.2rem;
   font-weight: 500;
   letter-spacing: 1px;
@@ -75,14 +82,14 @@ body{
   transition: 0.4s;
 }
 .form input.button:hover{
-  background: #006653;
+  background: var(--black);
 }
 .signup{
   font-size: 17px;
   text-align: center;
 }
 .signup label{
-  color: #009579;
+  color: var(--green);
   cursor: pointer;
 }
 .signup label:hover{
